@@ -13,7 +13,7 @@ void mod(stack_t **stack, unsigned int line_number)
 	(void) stack;
 	if (input->height < 2)
 	{
-		fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_number);
 		close_file();
 		free_opcodes();
 		free_input();
