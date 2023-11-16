@@ -11,6 +11,10 @@
 #include <ctype.h>
 
 
+/*** THE GLOBAL VARIABLE ***/
+extern inputs *input;
+
+
 /*** STRUCTURES  ***/
 
 /**
@@ -48,11 +52,16 @@ typedef struct instruction_s
 /**
 * struct inputs - handles inputs from files
 *
-* @opcode: the opcode
-* @f: function to handle the opcode
+* @source: the file from which input is taken
+* @line: the current line's contents
+* @tkns: tokens
+* @top: the top element in the stack/queue
+* @num_tkns: the number of tokens
+* @height: height
+* @line_num: the current line in the file on which the input is read
+* @instruction: instruction for monty
 *
-* Description: opcode and its function
-* for stack, queues, LIFO, FIFO
+* Description: Handles inputs from files
 */
 typedef struct inputs
 {
@@ -66,7 +75,6 @@ typedef struct inputs
 	instruction_t *instruction;
 } inputs;
 
-extern inputs *input;
 
 /*** OTHER FUNCTION PROTOTYPES USED IN THE PROJECT ***/
 
