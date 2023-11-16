@@ -11,9 +11,6 @@
 #include <ctype.h>
 
 
-/*** THE GLOBAL VARIABLE ***/
-extern inputs *input;
-
 
 /*** STRUCTURES  ***/
 
@@ -75,6 +72,8 @@ typedef struct inputs
 	instruction_t *instruction;
 } inputs;
 
+/*** THE GLOBAL VARIABLE ***/
+extern inputs *input;
 
 /*** OTHER FUNCTION PROTOTYPES USED IN THE PROJECT ***/
 
