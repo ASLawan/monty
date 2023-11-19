@@ -22,6 +22,7 @@ void set_input_defaults(void)
 	input->line_num = 0;
 	input->height = 0;
 	input->top = NULL;
+	input->data = 1;
 }
 
 
