@@ -34,10 +34,22 @@ void get_opcodes_func(void)
 		{"add", &add},
 		{"sub", &sub},
 		{"mul", &mul},
+		{"pchar", &pchar},
+		{"stack", &stack},
+		{"queue", &queue},
+		{"rotl", &rotl},
+		{"rotr", &rotr},
+		{"pstr", &pstr},
 		{"NULL", NULL}
 	};
 	if (input->num_tkns == 0)
 	{
+		return;
+	}
+	if (input->tkns[0][0] == '#')
+	{
+		input->instruction->opcode = "nop";
+		input->instruction->f = nop;
 		return;
 	}
 	for (; instructions[i].opcode != NULL; i++)
