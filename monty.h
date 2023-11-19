@@ -68,7 +68,7 @@ typedef struct inputs
 	stack_t *top;
 	int num_tkns;
 	int height;
-	unsigned int line_num;
+	unsigned int lnum;
 	instruction_t *instruction;
 	int data;
 } inputs;
