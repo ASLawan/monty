@@ -12,5 +12,5 @@ void execute_opcodes_func(void)
 	{
 		return;
 	}
-	input->instruction->f(&stack, input->line_num);
+	input->instruction->f(&stack, input->lnum);
 }

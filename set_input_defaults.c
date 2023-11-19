@@ -19,7 +19,7 @@ void set_input_defaults(void)
 	input->source = NULL;
 	input->line = NULL;
 	input->num_tkns = 0;
-	input->line_num = 0;
+	input->lnum = 0;
 	input->height = 0;
 	input->top = NULL;
 	input->data = 1;

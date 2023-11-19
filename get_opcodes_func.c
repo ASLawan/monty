@@ -6,7 +6,7 @@ void unknown_instruction(void);
  */
 void unknown_instruction(void)
 {
-	fprintf(2, "L%d: unknown instruction %s\n", input->line_num, input->tkns[0]);
+	fprintf(stderr, "L%d: unknown instruction %s\n", input->lnum, input->tkns[0]);
 	close_file();
 	free_input();
 	free_opcodes();

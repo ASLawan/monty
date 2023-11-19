@@ -74,7 +74,7 @@ int main(int ac, char **av)
 
 	while (getline(&input->line, &num, input->source) != -1)
 	{
-		input->line_num += 1;
+		input->lnum += 1;
 		get_opcodes();
 		get_opcodes_func();
 		execute_opcodes_func();
