@@ -57,7 +57,7 @@ typedef struct instruction_s
 * @height: height
 * @line_num: the current line in the file on which the input is read
 * @instruction: instruction for monty
-*
+* @data: data structure - stack or queue
 * Description: Handles inputs from files
 */
 typedef struct inputs
@@ -70,6 +70,7 @@ typedef struct inputs
 	int height;
 	unsigned int line_num;
 	instruction_t *instruction;
+	int data;
 } inputs;
 
 /*** THE GLOBAL VARIABLE ***/
@@ -84,15 +85,15 @@ void nop(stack_t **stack, unsigned int line_number);
 void ddiv(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
-/*void pstr(stack_t **stack, unsigned int line_number);*/
+void pstr(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
-/*void rotr(stack_t **stack, unsigned int line_number);*/
-/*void rotl(stack_t **stack, unsigned int line_number);*/
-/*void stack(stack_t **stack, unsigned int line_number);*/
-/*void queue(stack_t **stack, unsigned int line_number);*/
-/*void pchar(stack_t **stack, unsigned int line_number);*/
+void rotr(stack_t **stack, unsigned int line_number);
+void rotl(stack_t **stack, unsigned int line_number);
+void stack(stack_t **stack, unsigned int line_number);
+void queue(stack_t **stack, unsigned int line_number);
+void pchar(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 
 void execute_opcodes_func(void);
