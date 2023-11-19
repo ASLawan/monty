@@ -55,7 +55,7 @@ typedef struct instruction_s
 * @top: the top element in the stack/queue
 * @num_tkns: the number of tokens
 * @height: height
-* @line_num: the current line in the file on which the input is read
+* @lnum: the current line in the file on which the input is read
 * @instruction: instruction for monty
 * @data: data structure - stack or queue
 * Description: Handles inputs from files
